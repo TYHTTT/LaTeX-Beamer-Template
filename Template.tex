@@ -1,7 +1,12 @@
 \documentclass[11pt, aspectratio=169, UTF8, fontset=none]{ctexbeamer}
 
-% 选择学术界常用的经典主题（底部自带作者、标题和页码导航）
-\usetheme{Madrid}
+% ==================== 主题设置 ====================
+\usetheme{Madrid}% 选择学术界常用的经典主题(底部自带作者、标题和页码导航)
+\setbeamertemplate{itemize items}[circle]% 普通列表：扁平圆点
+\setbeamertemplate{enumerate items}[circle]% 编号列表：扁平圆形编号
+\setbeamertemplate{sections/subsections in toc}[circle]% 目录编号：去掉立体球效果
+\setbeamertemplate{blocks}[default]% Block：直角、无阴影、保留原配色
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=false,shadow=false]% 封面：直角矩形、无阴影、保留原配色
 
 % ==================== 首行缩进和段落间距设置 ====================
 \setlength{\parindent}{0pt}
