@@ -34,6 +34,7 @@
 }
 
 % ==================== 插图设置 ====================
+\usepackage{tikz}%绘图宏包
 \usepackage{graphicx}%图片宏包
 \usepackage{subcaption}%子图宏包
 %强制开启图表自动编号
@@ -129,8 +130,7 @@
 % ---------------- 基本信息 ----------------
 \title[\LaTeX \ Beamer Template]{\LaTeX \ Beamer Template}
 \subtitle{subtitle}
-\author[你的名字]{报告人：你的名字}
-\institute[你的实验室或学院]{你的大学}
+\author{报告人：你的名字}
 \date{}
 
 \begin{document}
@@ -138,6 +138,20 @@
 % 封面页
 \begin{frame}
     \titlepage
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[
+            anchor=south,
+            yshift=0.5cm,
+            align=center,
+            inner sep=0pt
+        ] at (current page.south) {
+            % 校徽
+            \includegraphics[height=1.2cm]{Logos/上海大学校徽.pdf}
+            \\[0.15cm]
+            % 校名
+            \includegraphics[width=2.5cm]{Logos/上海大学校名(黑).pdf}
+        };
+    \end{tikzpicture}
 \end{frame}
 
 % 目录页
