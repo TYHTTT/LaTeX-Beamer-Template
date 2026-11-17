@@ -16,21 +16,21 @@
 \setbeamertemplate{navigation symbols}{}
 
 \setbeamertemplate{footline}{
-  \leavevmode%
-  \hbox{%
-  % 左侧：报告标题（占屏幕宽度的 40%）
-  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=2ex]{author in head/foot}%
-    \usebeamerfont{author in head/foot}\insertshorttitle
-  \end{beamercolorbox}%
-  % 中间：当前章节（占屏幕宽度的 40%）
-  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}\insertsectionhead
-  \end{beamercolorbox}%
-  % 右侧：幻灯片进度（占屏幕宽度的 20%）
-  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=2ex]{date in head/foot}%
-    \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber
-  \end{beamercolorbox}}%
-  \vskip0pt%
+    \leavevmode%
+    \hbox{%
+        % 左侧：报告标题（占屏幕宽度的 40%）
+        \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=2ex]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertshorttitle
+        \end{beamercolorbox}%
+        % 中间：当前章节（占屏幕宽度的 40%）
+        \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertsectionhead
+        \end{beamercolorbox}%
+        % 右侧：幻灯片进度（占屏幕宽度的 20%）
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=2ex]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber
+        \end{beamercolorbox}}%
+    \vskip0pt%
 }
 
 % ==================== 插图设置 ====================
@@ -62,28 +62,28 @@
 
 % 定义一个新的环境：code
 \newtcblisting{code}[1][]{
-  listing only,
-  breakable,
-  colback=codegray,        % 背景色
-  colframe=framegray,      % 边框色
-  boxrule=1pt,             % 边框粗细
-  arc=3pt,                 % 圆角大小
-  outer arc=3pt,
-  left=4pt, right=4pt, top=2pt, bottom=2pt, % 内部边距
-  listing options={
-	tabsize=4,               %告诉引擎1个Tab等于4个空格，消灭 ^^I
-    columns=fullflexible,    %改用弹性对齐，防止引擎吞掉 \begin
-    keepspaces=true,         %严格保留所有缩进
-	mathescape=true,%允许注释使用latex公式
-    basicstyle=\ttfamily\small, % 等宽字体和小字号
-    breaklines=true,            % 自动换行
-    keywordstyle=\color{keywordcolor}\bfseries,
-    stringstyle=\color{stringcolor},
-    commentstyle=\color{commentcolor},
-    showstringspaces=false,
-    language=#1,% 允许传入语言参数
-	escapechar=|,  % 允许使用 | 临时切回 LaTeX 引擎
-  }
+    listing only,
+    breakable,
+    colback=codegray,        % 背景色
+    colframe=framegray,      % 边框色
+    boxrule=1pt,             % 边框粗细
+    arc=3pt,                 % 圆角大小
+    outer arc=3pt,
+    left=4pt, right=4pt, top=2pt, bottom=2pt, % 内部边距
+    listing options={
+            tabsize=4,               %告诉引擎1个Tab等于4个空格，消灭 ^^I
+            columns=fullflexible,    %改用弹性对齐，防止引擎吞掉 \begin
+            keepspaces=true,         %严格保留所有缩进
+            mathescape=true,%允许注释使用latex公式
+            basicstyle=\ttfamily\small, % 等宽字体和小字号
+            breaklines=true,            % 自动换行
+            keywordstyle=\color{keywordcolor}\bfseries,
+            stringstyle=\color{stringcolor},
+            commentstyle=\color{commentcolor},
+            showstringspaces=false,
+            language=#1,% 允许传入语言参数
+            escapechar=|,  % 允许使用 | 临时切回 LaTeX 引擎
+        }
 }
 
 % ==================== 字体设置 ====================
@@ -114,11 +114,11 @@
 
 % ==================== 自动生成章节提示页 ====================
 \AtBeginSection[]{
-  \begin{frame}{当前进度}
-    % currentsection: 仅高亮当前章节，其他章节字体变淡(半透明)
-    % hideallsubsections: 隐藏所有子章节，保持页面排版简洁
-    \tableofcontents[currentsection]
-  \end{frame}
+    \begin{frame}{当前进度}
+        % currentsection: 仅高亮当前章节，其他章节字体变淡(半透明)
+        % hideallsubsections: 隐藏所有子章节，保持页面排版简洁
+        \tableofcontents[currentsection]
+    \end{frame}
 }
 
 % ==================== 表格设置 ====================
@@ -156,19 +156,19 @@
 
 % 目录页
 \begin{frame}{报告提纲}
-  \tableofcontents
+    \tableofcontents
 \end{frame}
 
 \section{想法}
 
 \begin{frame}{之前的缺点}
-    
+
     说明之前方法的缺点。
 
 \end{frame}
 
 \begin{frame}{作者的思路}
-    
+
     说明作者的思路。
 
 \end{frame}
@@ -205,9 +205,9 @@
 
 \begin{frame}{单张图片}
     \begin{figure}[htbp]
-	    \centering
-	    \includegraphics[width=0.5\linewidth]{Figures/时谐电流源J.pdf}
-	    \caption{图名\label{图名}}
+        \centering
+        \includegraphics[width=0.5\linewidth]{Figures/时谐电流源J.pdf}
+        \caption{图名\label{图名}}
     \end{figure}
 \end{frame}
 
@@ -228,7 +228,7 @@
             \caption{SubFigure2}
             \label{fig:sub2}
         \end{subfigure}
-    
+
         \caption{1×2布局\label{fig:main}}
     \end{figure}
 \end{frame}
@@ -237,19 +237,19 @@
 
 \begin{frame}{单张表格}
     \begin{table}[htbp]%h:here当前位置,t:top页面顶部,b:bottom页面底部,p:page另放一页
-	\caption{表名}\label{表1}
-	\centering
-	\begin{tabular}{p{3cm}<{\centering} p{3cm}<{\centering} p{3cm}<{\centering} p{3cm}<{\centering}}
-		%p{3cm}规定列宽，\centering规定居中对其
-		\toprule[1.5pt]
-		1&2&3&4\\
-		\midrule[0.75pt]
-		内容&内容&内容&内容\\
-		内容&内容&内容&内容\\
-		内容&内容&内容&内容\\
-		\bottomrule[1pt]
-	\end{tabular}
-\end{table}
+        \caption{表名}\label{表1}
+        \centering
+        \begin{tabular}{p{3cm}<{\centering} p{3cm}<{\centering} p{3cm}<{\centering} p{3cm}<{\centering}}
+            %p{3cm}规定列宽，\centering规定居中对其
+            \toprule[1.5pt]
+            1  & 2  & 3  & 4  \\
+            \midrule[0.75pt]
+            内容 & 内容 & 内容 & 内容 \\
+            内容 & 内容 & 内容 & 内容 \\
+            内容 & 内容 & 内容 & 内容 \\
+            \bottomrule[1pt]
+        \end{tabular}
+    \end{table}
 \end{frame}
 
 \section{文字与图片或表格联合排版}
@@ -275,17 +275,17 @@
 
         \begin{column}{0.7\textwidth}
             \begin{table}[htbp]%h:here当前位置,t:top页面顶部,b:bottom页面底部,p:page另放一页
-	            \caption{表名}\label{表2}
-	            \centering
-	            \begin{tabular}{p{1.5cm}<{\centering} p{1.5cm}<{\centering} p{1.5cm}<{\centering} p{1.5cm}<{\centering}}%p{3cm}规定列宽，\centering规定居中对其
-		            \toprule[1.5pt]
-		            1&2&3&4\\
-		            \midrule[0.75pt]
-		            内容&内容&内容&内容\\
-		            内容&内容&内容&内容\\
-		            内容&内容&内容&内容\\
-		            \bottomrule[1pt]
-	            \end{tabular}
+                \caption{表名}\label{表2}
+                \centering
+                \begin{tabular}{p{1.5cm}<{\centering} p{1.5cm}<{\centering} p{1.5cm}<{\centering} p{1.5cm}<{\centering}}%p{3cm}规定列宽，\centering规定居中对其
+                    \toprule[1.5pt]
+                    1  & 2  & 3  & 4  \\
+                    \midrule[0.75pt]
+                    内容 & 内容 & 内容 & 内容 \\
+                    内容 & 内容 & 内容 & 内容 \\
+                    内容 & 内容 & 内容 & 内容 \\
+                    \bottomrule[1pt]
+                \end{tabular}
             \end{table}
         \end{column}
     \end{columns}
@@ -304,29 +304,29 @@
 \end{frame}
 
 \begin{frame}{参考文献引用测试}
-  引用1\cite{ref1}
+    引用1\cite{ref1}
 
-  引用2\cite{ref2}
+    引用2\cite{ref2}
 
-  文献\parencite{ref1}
+    文献\parencite{ref1}
 
-  文献\parencite{ref2}
+    文献\parencite{ref2}
 \end{frame}
 
 % ---------------- 参考文献 ----------------
 \section*{参考文献}
 % allowframebreaks 参数允许当参考文献过多时，自动换页
 \begin{frame}[allowframebreaks]{参考文献}
-  % 这里只需一句话，biblatex 会自动提取 ref.bib 中的文献并排版
-  \printbibliography
+    % 这里只需一句话，biblatex 会自动提取 ref.bib 中的文献并排版
+    \printbibliography
 \end{frame}
 
 % ---------------- 结尾页 ----------------
 \section*{致谢}
 \begin{frame}
-  \begin{center}
-    {\Huge Thanks} \\
-  \end{center}
+    \begin{center}
+        {\Huge Thanks} \\
+    \end{center}
 \end{frame}
 
 \end{document}
